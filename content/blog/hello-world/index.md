@@ -14,6 +14,25 @@ Handling different data types and input fields was a challenge as it required im
 
 ## Detailed Analysis
 
+The Create Invoice page is where a user will enter all relevant data needed to create and generate an invoice. This includes all data ranging from Invoice Due Date to the Item Description to total Amount Due from the customer. Therefore, this page represents a gathering of various types of data the user will need to send to _her_ customer
+
+Once the user clicks generate, all the data should be saved and sent to the backend for storage, retrieval, editing and deletion (CRUD) at a later time. 
+
+We wanted to have a main create-invoice-form component (parent) that would store all user input data on local state, before sending to the backend.
+
+Because the form is complex, there are several child components (reusable components) that send props to the create-invoice-form component. 
+
+Getting all incoming data from various child components into one data object was one of the challenges. Particularly in handling different data types.
+
+The is an added layer of complexity when you get to the "items" section of the invoice. Here, we want our users to be able to add multiple items - dynamically - into the invoice form. Then, after multiple items, when the user clicks "generate", the data object would capture all relevant info and _all_ items where the amount due would be summed all at once. 
+
+A screenshot is provided below.
+
+## Part 2 - Milestone Reflections
+
+Writing the TDD was a great learning experience. I tried to contribute to all sections of the TDD. I analyzed competing Invoice Apps to figure out what the basic and advanced features were. Looking at competing apps also helped me get clear about the various "user stories" that we wanted to have. Thinking through the user stories really helped make the idea of an Invoice App clearer in my mind. 
+
+Writing out the User Stories and Features of the App helped cement the App better in my mind in terms of what our App would need to look like and be able to do. 
 
 
 Oh, and here's a great quote from this Wikipedia on
@@ -27,4 +46,4 @@ Oh, and here's a great quote from this Wikipedia on
 > salted duck eggs have a briny aroma, a gelatin-like egg white and a
 > firm-textured, round yolk that is bright orange-red in color.
 
-![Chinese Salty Egg](./salty_egg.jpg)
+![Lab 1 Sprint Screenshot](./lab1_sprint.jpg)
