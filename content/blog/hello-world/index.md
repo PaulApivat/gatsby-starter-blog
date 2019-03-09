@@ -1,6 +1,6 @@
 ---
 title: Sprint Challenge - Labs 1 - Paul Apivat
-date: "2015-05-01T22:12:03.284Z"
+date: "2019-03-10T22:12:03.284Z"
 ---
 
 ## Part 1 - Individual Accomplishments this Sprint
@@ -34,16 +34,15 @@ Writing the TDD was a great learning experience. I tried to contribute to all se
 
 Writing out the User Stories and Features of the App helped cement the App better in my mind in terms of what our App would need to look like and be able to do. 
 
+One of the biggest learning for me, with respect to the TDD, was the debate and discussion our team had for Frontend, Backend, Database and Deployment. This was eye opening for me as it gave me a flavor for what it was like to be intentional about technologies we were using to accomplish a task. 
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](http://en.wikipedia.org/wiki/Salted_duck_egg).
+It also demonstrated the importance of balancing the need for individual learning, familiarity and task accomplishment within the team. 
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
+The biggest learning for me is related to the dynamics of working in a team. This involved setting up the Application structure in a certain way that we all understood where our individual contribution was coming from, but also what we were contributing _to_ (a team outcome). 
+
+The dynamics of writing code _for_ other people is my biggest take-away in this first sprint. Being aware of how my code will mesh with my teammate's code. Learning to understand how my teammate codes and structures the project. Understanding our team work flow and dealing with merge conflicts was the most challenging, yet rewarding part of the week. 
+
+> The invoice ensures that sales and cashflow are aligned. 
+
 
 ![Lab 1 Sprint Screenshot](./lab1_sprint.jpg)

@@ -31,10 +31,9 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
+              Written by <strong>Paul</strong> who lives and works in Bangkok building useful things.
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
+              <a href={`https://twitter.com/paulapivat`}>
                 You should follow him on Twitter
               </a>
             </p>
