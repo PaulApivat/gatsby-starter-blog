@@ -32,12 +32,21 @@ My most challenging ticket was implementing Google Calendar API.
 
 I had to implement a user sign-in first, then that would lead to a button that, when clicked opened up the user's Google Calendar, with a ready made template ready for the user to enter event details into their calendar. 
 
-The first button prompts users to log into their Google Account. Then once logged in, the second button opens a new popup window directly into a Calendar Event template. When the user fills out that calendar event, it gets added to their calendar, they can close out that popup window and get back to their create invoice form. 
-
+The first button prompts users to log into their Google Account. 
 ![Google Signin Prompt](./google-signin.png)
 
+Then once logged in, the second button opens a new popup window directly into a Calendar Event template. 
 ![Google Calendar Event Template](./google-cal-template.png)
 
+When the user fills out that calendar event, it gets added to their calendar, they can close out that popup window and get back to their create invoice form.
+
+This involved first creating a GoogleCalApi component. This component would essentially have 'isSignedIn' on state to indicate whether the user was logged in or not. 
+
+This component would have componentDidMount() lifecycle method to interact with my own GOOGLE API CLIENT_ID, Discovery Docs and Scopes. There are functions to handle logging in and out. Finally, there is a function to update the state once user is logged in or out. 
+
+The GoogleCalApi component would wrap around another component called AddToCalendar which is the button that users click, once logged in to their google account, to open up a Calendar Event Template. 
+
+For AddToCalendar, I found someone else's frontend implementation of opening Google Calendar in pure Vanilla Javascript. My task was to translate this into a React component. After many days, I finally got a working solution. 
 
 ### Part 2 - Weekly Reflection
 
