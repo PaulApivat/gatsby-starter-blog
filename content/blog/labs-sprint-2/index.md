@@ -1,22 +1,24 @@
 ---
-title: Labs Sprint 2
+title: Labs Sprint 2 Integration
 date: "2019-03-25T22:40:32.169Z"
-description: Posting for Labs Sprint 2 (week 3-4).
+description: Sprint Challenge - Labs 2 - Integration.
 ---
 
-Labs Sprint 2. 
+Labs Sprint 2 Challenge. 
 
-## On deer horse aboard tritely yikes and much
+## Part 1 - Individual Accomplishment this Sprint
 
-The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.
+This past sprint, I worked primarily on getting our calendar feature ready and functional. When creating a new invoice, our Invoice App will allow our users to pick a current and due date for the invoice. The challenge for me was getting a React calendar component that would allow users to pick a date - and, this was the challenging part - having the dates picked be added to ONE data object when the user clicks "generate" in creating a new invoice. Finally, I was able to hook up a react-day-picker component to our application, allowing users to send up the data object as one object. 
 
-- This however showed weasel
-- Well uncritical so misled
-  - this is very interesting
-- Goodness much until that fluid owl
+The second challenge was communication-originated. When we were discussing our wireframe, it was very basic and only after starting to REALLY think about features and user experience did I realize we needed TWO separate calendar functions. One day picker and one for Google Calendar API - where we wanted the user to be able to add an "invoice due" event to their own personal (google) calendar. 
+
+Figuring out how to use Google Calendar API within the context of how we wanted users to experience the application was a huge challenge. 
+
+Most of my work this past sprint was in React. I had to translate Vanilla Javascript to React was another challenge. I ended up using the react-day-picker component and mixing and matching an implementation of accessing Google Calendar API on the frontend. 
+
+Accomplishment:
+- Successfully Implementing a Calendar Day Picker
+- Successfully Implementing Google Calendar API
 
 When she reached the first hills of the **Italic Mountains**, she had a last
 view back on the skyline of her hometown _Bookmarksgrove_, the headline of
@@ -24,7 +26,7 @@ view back on the skyline of her hometown _Bookmarksgrove_, the headline of
 Lane. Pityful a rethoric question ran over her cheek, then she continued her
 way. On her way she met a copy.
 
-### Overlaid the jeepers uselessly much excluding
+### Detailed Analysis
 
 But nothing the copy said could convince her and so it didn’t take long until a
 few insidious Copy Writers ambushed her, made her drunk with
@@ -41,7 +43,7 @@ mouth. Even the all-powerful Pointing has no control about the blind texts it is
 an almost unorthographic life One day however a small line of blind text by the
 name of Lorem Ipsum decided to leave for the far World of Grammar.
 
-### According a funnily until pre-set or arrogant well cheerful
+### Part 2 - Weekly Reflection
 
 The Big Oxmox advised her not to do so, because there were thousands of bad
 Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
