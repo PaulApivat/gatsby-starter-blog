@@ -19,6 +19,9 @@ This week's challenge was about coordinating with the backend team to enable mvp
 
 Accomplishments:
 - Create model, schema for Invoice on the backend 
+
+![Invoice Schema Backend](./schemas.png)
+
 - Create Edit Invoice component 
 - Create routes to connect Create Invoice to Invoice List
 - Make Create Invoice Responsive
@@ -32,9 +35,15 @@ My most challenging task was making sure we could send Invoice data to the datab
 
 First, I had to create the Invoice schema, resolvers, on the backend to allow the Invoice form to be connected to the database. I had to get familiar with GraphQL as well as the specific style the backend team had setup other schemas and resolvers (ie., user, company).
 
+![Invoice Resolver Backend](./resolvers.png)
+
 An intermediate step is testing queries and mutations on GraphiQL before connecting it to the frontend via handlers that contained specific queries and mutation.
 
 This requires setting up GraphQL mutations and queries, specifically for the Invoice form. 
+
+![Invoice Mutations on Frontend](./mutations.png)
+
+![Invoice Queries on Frontend](./queries.png)
 
 Moreover, because our MVP - feature complete - meant that when the User created the Invoice, it downloads a PDF before redirecting back to the Invoice List to display a new Invoice Card as either paid, unpaid or late, there was some routes that had to be created to connect the Invoice List. 
 
