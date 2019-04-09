@@ -66,3 +66,9 @@ On top of that, we lost a key member of our team (who got a job!).
 
 I found myself reaching out to the backend team more and trying to understand their codebase. Fortunately, I think losing a member of team brought us all closer as a unit. We all rallied. 
 
+The biggest part of the work, in my opinion, wasn't necessarily the code per se, but stuff outside of coding - 
+- checking in with teammates, 
+- reaching out for help, 
+- being available to jump on zoom/pair program at odd hours, 
+- being responsive on slack.
+
