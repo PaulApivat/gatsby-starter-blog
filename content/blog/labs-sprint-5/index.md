@@ -28,9 +28,44 @@ For this sprint, I did a number of tasks including:
 
 ### Detailed Analysis
 
-Form validation
+#### Hooks & Steppers
 
-Hooks
+The team was really excited about using Hooks, particularly in the context of "React Context". Using Hooks basically enables you to change all class components into functional component, while still accessing state. The primary benefits include:
+
+- more easily re-use/share stateful logic between components
+- reduced syntax
+- limit side effects to a particular component
+
+I still need more experience with Hooks because just as I was about to refactor the existing invoice form to use Hooks, the team decided they wanted to change the invoice form to enable Material-UI Steppers - this meant structurally changing the Invoice component _AND_ at the same time, employing Hooks.
+
+What this has amounted to is:
+
+1. Instead of the invoice form being _one_ giant component, there is one component (CreateInvoiceStepper) with many sub-component: Customer form, Dates, Invoice Items, Other details
+2. This results in better user-experience. Instead of the user being confronted with one large form to fill out, the process is broken up into five _steps_ so filling out an invoice form is not as tedious.
+3. While previously, I had restructurd the directory of the invoice form to be more composable. The new structure really reinforces the idea of separate components - not just at the directory level, but also at the code level. For example, InvoiceCustomer, Date Selector, SingleLineInput are all separate components that are imported into the CreateInvoiceStepper.
+4. An explicit focus on separate components is further reinforced with Hooks where each component is a _functional_ component, instead of a class-based one. We now employe useState() and useEffect(), for life-cycle methods.
+
+#### Form Validation
+
+For the previous invoice form, I create form validation because we found that users may have a tendency to forget to fill out an important input field. Fortunately, this is fairly straight forward with Material-UI.
+
+1. I passed `error` and `helperText` as props with each individual component (i.e., InvoiceNumberInput).
+2. Add `errorText` to the Invoice form local state.
+3. In handleFormSubmit, write a conditional to check if the length of component is `0` (if it is, then the user forgot to write something), in that case, setState of `errorText` to notify the user.
+4. Back on the invoice, write ternary to check if a component is entered, if not, the `errorText` also flashes.
+
+```
+error={
+this.state.invoiceNumber.length === 0
+    ? !!this.state.errorText
+    : false
+}
+helperText={
+this.state.invoiceNumber
+    ? !!this.state.errorText
+    : this.state.errorText
+}
+```
 
 ### Part 2 - Weekly Reflection
 
