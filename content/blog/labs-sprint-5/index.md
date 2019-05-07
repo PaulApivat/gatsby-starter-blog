@@ -12,11 +12,19 @@ For this sprint, I did a number of tasks including:
 
 2. Implement _form validation_ to ensure that users fill out all necessary input fields on the Invoice before submitting the data to the backend.
 
+![Form Validation](./form-validation.png)
+
 3. Create an Edit Popup Modal so users can click on any row on the Invoice List and make updates to Total, Amount Paid and Balance Due.
+
+![Edit Modal](./edit-modal.png)
 
 4. Transition Invoice Form content to a new "Steppers" layout. The team felt this presentational flow would be more user-friendly.
 
+![Invoice Steppers](./invoice-steppers.png)
+
 5. Create an Invoice Summary form to accompany the new steppers-layout for creating an invoice. This summary form will auto-populate as a user progresses through the five stages creating an invoice.
+
+![Invoice Summary Card](./invoice-summary-card.png)
 
 ### Detailed Analysis
 
