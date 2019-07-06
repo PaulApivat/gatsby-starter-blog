@@ -82,4 +82,8 @@ class LoginHOC extends React.Component {
 export default withStyles(styles)(LoginHOC);
 ```
 
-Hooks and HOC are very similar except for one crucial difference, Hooks are structured as functional components, while HOC allow for class components. In the case of my Login component, I needed to structure it as a **class** component because the login function that is tied to the Auth0 authentication I have setup in Auth/Auth.js needs to be passed down to the Login component, so it needs to accept login as props.
+Hooks and HOC are very similar except for one crucial difference, Hooks are structured as functional components, while HOC allow for class components. In the case of my Login component, I needed to structure it as a **class** component because the login function that is tied to the Auth0 authentication I have setup in Auth/Auth.js needs to be passed down to the Login component, so it needs to accept the `login` function as props.
+
+Nevertheless, because it is expected that everyone is moving towards Hooks, I will have to switch to hooks. Before doing that, I'll make sure to pass all Auth/Auth.js functions down via React Context.
+
+Then switch over all components to Hooks. This is something planned post-MVP.
