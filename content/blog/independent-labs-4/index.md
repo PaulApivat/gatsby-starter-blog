@@ -1,6 +1,6 @@
 ---
 title: Independent Labs - Page Layouts with Material-UI
-date: "2019-07-06T22:40:32.169Z"
+date: "2019-07-09T22:40:32.169Z"
 description: People Engagement App - Page Layouts
 ---
 
@@ -90,8 +90,8 @@ export default withStyles(styles)(SampleComponent);    // HOC
 
 ```
 
-The useful thing about Material-UI's grid system is that it is flexible enough to structure any page layout _and_ it is automatically responsive. The Grid System - Grid Container + Grid Item - take a bit of studying, but Material-UI's sample project provides nice guidance.
+The useful thing about Material-UI's grid system is that it is flexible enough to structure any page layout _and_ it is responsive. The Grid System - Grid Container + Grid Item - take a bit of studying, but Material-UI's sample project provides nice guidance.
 
 I should mention Material-UI's documentation is **excellent**.
 
-Components that are rendered must simultaneously be styled in order to see their effects.
+Components that are rendered must simultaneously be styled.
