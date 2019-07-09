@@ -95,3 +95,19 @@ The useful thing about Material-UI's grid system is that it is flexible enough t
 I should mention Material-UI's documentation is **excellent**.
 
 Components that are rendered must simultaneously be styled.
+
+#### Example Page Layouts
+
+**Alerts**
+
+![Alerts](./alert_layout.png)
+
+**Driver Impact Report**
+
+![Driver Impact Report](./di_layout.png)
+
+**Action Plan**
+
+![Action Plan](./actionplan_layout.png)
+
+Material-UI provides a lot of flexibility for styling and structuring pages as Bootstrap does for CSS, except within the context of React.

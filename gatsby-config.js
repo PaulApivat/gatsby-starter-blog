@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Paul People Tech`,
+    title: `Paul Dot Tech`,
     author: `Paul Hanvongse`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
