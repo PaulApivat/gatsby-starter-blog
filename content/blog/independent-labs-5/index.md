@@ -47,7 +47,7 @@ _NOTE_: Create a new "tenant" in Auth0 for Production (vs Development) environme
 - Create an account with Auth0; create new tenant for Production environment, separate from Development environment
 - Create a new application in the tenant.
 - Assuming the app is a SPA (single page application)
-- In the Settings for your new Auth0 application, add your URL to Allowed Callback URL, in my case (https://focused-kirch-10cac8.netlify.com/)
+- In the Settings for your new Auth0 application, add your URL to Allowed Callback URL, in my case (https://focused-kirch-10cac8.netlify.com/callback)
 - Replace the clientID in the SPA with the client id from your Auth0 dashboard.
 - Replace redirectUri in the SPA with the Allowed callback URL from your Auth0 dashboard.
 - Ensure the Allowed Web Origins, Allowed Origins(CORS) in your Auth0 dashboard is set to your live URL. In my case, https://focused-kirch-10cac8.netlify.com/.
@@ -68,10 +68,10 @@ Also setup your environment variables in Netlify settings
 Create `_redirects` file for Single Page Application
 I got conflicting information on this one:
 
-- Netlify documentation says you can add \_redirect file to root of the application or to `netlify.toml` file [source](https://www.netlify.com/docs/redirects/)
+- Netlify documentation says you can add `_redirect` file to root of the application or to `netlify.toml` file [source](https://www.netlify.com/docs/redirects/)
 - React documentation says you can add `_redirect` to the public directory [source](https://facebook.github.io/create-react-app/docs/deployment)
 
-I ended up adding `_redirect` file to build/\_redirect and public/\_redirect
+I ended up adding `_redirect` file to the build and public directories - `build/_redirect` and `public/_redirect`
 
 All sources were in agreement on the contents of the `_redirect` file:
 
@@ -83,4 +83,4 @@ All sources were in agreement on the contents of the `_redirect` file:
 
 Make sure you have your API set-up in Auth0 with the correct identifier
 
-REACT_APP_AUTH0_AUDIENCE in both `.env` and Environment settings in Netlify point to http://localhost:3001 and that should be the identifier setup in your Auth0 API
+`REACT_APP_AUTH0_AUDIENCE` in both `.env` and Environment settings in Netlify point to http://localhost:3001 and that should be the identifier setup in your Auth0 API
