@@ -40,4 +40,37 @@ After:
 
 ![After](./after_scatter.png)
 
-The trickiest customization was ensuring that the gridlines on the X-Axes only highlighted _impact levels_ at 30 and 70.
+The trickiest customization was ensuring that the gridlines on the X-Axes only highlighted _impact levels_ at 30 and 70. ChartJS allows you to customize the color of every gridline on each Axes, so for the X-Axes, I made placed the colors in an array, making all colors the _same_ as the background (dodger blue "#66b3ff") except for the marker at impact level 30 and 70. This customization happens in the options property for all charts.
+
+```
+options={{
+    scales: {
+        xAxes: [
+        {
+            type: "linear",
+            scaleLabel: {
+            display: true,
+            labelString: "Impact"
+            },
+            position: "bottom",
+            gridLines: {
+            zeroLineColor: "white",
+            // set gridlines color to array of colors to highlight low, med, high Impact at 30, 70
+            color: [
+                "#66b3ff",
+                "#66b3ff",
+                "#66b3ff",
+                "whitesmoke",
+                "#66b3ff",
+                "#66b3ff",
+                "#66b3ff",
+                "whitesmoke",
+                "#66b3ff",
+                "#66b3ff",
+                "#66b3ff"
+            ],
+            lineWidth: 5
+            }
+        }
+        ],
+```
