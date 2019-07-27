@@ -34,7 +34,7 @@ While I could navigate my away around the _simple_ table component, once sorting
 
 ## Building a Table with Sorting from scratch
 
-Fortunately, I found a [tutorial](https://www.youtube.com/watch?v=akxsFgM7DPA) to help guide the broad strokes for how this is done. Nevertheless, substantial customization was needed to build the table for my specific use cas.
+Fortunately, I found a [tutorial](https://www.youtube.com/watch?v=akxsFgM7DPA) to help guide the broad strokes for how this is done. Nevertheless, substantial customization was needed to build the table for my specific use case.
 
 ### Step 1: Create dataset in JSON
 
