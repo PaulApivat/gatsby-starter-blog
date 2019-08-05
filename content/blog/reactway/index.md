@@ -1,7 +1,7 @@
 ---
-title: Permission to be Ugly
+title: Appreciating the React Way
 date: "2019-08-05T22:40:32.169Z"
-description: Learning the React Way
+description: Multiple components for the Front Page
 ---
 
 ## Front Page Wireframe
@@ -18,6 +18,18 @@ Here's the wireframe:
 
 ## Appreciating the React Way
 
-This past week I finally completed the frontend MVP for this component. While I was already familiar with the _React Way_, I had a better appreciation from organizing the code for thie particular component. Every feature, whether as simple as displaying a % figure, a drop down box, a blue circle, a list or something with more moving parts like a donut-chart, everything was it's own component.
+While I was already somewhat familiar with [_thinking in React_](https://reactjs.org/docs/thinking-in-react.html), I got an even better appreciation from organizing the code for thie particular component.
+
+Every feature, whether as simple as displaying a % figure, a drop down box, a blue circle, a list or something with more moving parts like a donut-chart, everything was it's own component.
 
 The idea was to prevent the main component from getting too cluttered.
+
+## Permission to be Ugly
+
+This past week I finally completed the frontend MVP for this component. What helps is knowing that the MVP is supposed to be ugly.
+
+![Front Page MVP](./frontmvp.png)
+
+For the moment I'm using dummy data, the next step will be to clean up the layout, then import _real_ data, then comes the harder part of thinking about storing data on state.
+
+Finally, the idea is to implement Hooks to keep state data located in one place. More soon.
