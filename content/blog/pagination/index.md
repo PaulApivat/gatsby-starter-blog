@@ -154,7 +154,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
 
 The challenge was integrating this custom pagination with the existing table with Sort.
 
-Therefore, I figured that I needed to add the sort functions I had previous defined into the Posts component where the table is defined. This way users can still click each Column Heading to sort the data via driver, score, alert, benchmark, division, respondents, data or flagged. 
+Therefore, I figured that I needed to add the sort functions I had previously defined into the Posts component where the table is defined. This way users can still click each Column Heading to sort the data via driver, score, alert, benchmark, division, respondents, data or flagged. 
 
 The end product is a table that can do both sorting and pagination:
 
